@@ -1,0 +1,92 @@
+@import './bootstrap.min';
+@import './animate.min';
+@import 'font-awesome-4.7.0/scss/font-awesome';
+@import './fonts';
+
+
+
+
+
+%link-button {  //extend this to <a>
+	padding: 12px 40px;
+	color: white;
+    border: 3px solid;
+    border-radius: 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+	font-family: "GothamProRegular";
+	font-size: 12px;
+    cursor: pointer;
+    &:hover, &:focus {
+    	color: #35bdf6;
+    	outline: 5px auto -webkit-focus-ring-color;
+    }
+}
+
+
+.myrow { //cancel bootstrap standart row settings
+	margin-right: 0;
+    margin-left: 0;
+}
+
+
+//about page 
+
+.about-home {
+	//height: 80vh;
+	height: auto;
+	position: relative;
+	overflow: hidden;
+	background-color: #F6F6F6;
+	
+	video {
+		margin: auto;
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		padding: 0;
+		@media (max-width: 920px) {
+			height: 100%;
+			width: auto;
+		}
+	}
+}
+
+
+.about-home-page-content{
+	// position: relative;
+	// vertical-align: middle;
+	// top: 30%;
+	width: 100%;
+    height: 100%;
+    margin: auto;
+    padding-top: 140px;
+    max-width: 500px;
+    overflow: hidden;
+	text-align: center;
+	color: white;
+    .main-logo {
+    	width: 200px;
+    	height: auto;
+    }
+    h1 {
+    	font-family: "GothamProRegular";
+    	letter-spacing: 1px;
+    	font-weight: 200;
+    	line-height: 27px;
+    }
+    p {
+    	font-family: "GothamProRegular";
+    	// letter-spacing: 1px;
+    	font-size: 15px;
+    	line-height: 25px;
+    }
+}
+
+
+.about-home-button {
+	margin: 150px 0 40px 0;
+	a {
+    	@extend %link-button;	
+    }
+}
